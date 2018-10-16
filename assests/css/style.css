@@ -1,0 +1,193 @@
+body,html,h1{
+    margin: 0;
+    background-color: gray;
+}
+
+.limit-width{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.main-header{
+    background-color: #2b2d31;
+}
+
+.round-img{
+    width: 150px;
+    float: left;
+    margin: 0 25px 25px;
+    border-radius: 4px;
+}
+
+.my-name{
+    float: left;
+    padding: 20px 35px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+}
+
+.nav-bar{
+    text-align: right;
+}
+
+.orbitron{
+    color: #ffdd00;
+    font-family: 'Orbitron', sans-serif;
+    background-color: inherit;
+}
+
+     .normal-orbitron{
+        font-size: 1em;
+        color: #fff;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: bold;
+
+    }
+
+.red-button{
+    font-family: "orbitron";
+    color: #fff;
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #bf1313;
+    border: 5px solid #1a1a1a;
+    border-radius: 4px;
+}
+
+        .nav-bar li:hover{
+            border: 5px solid #bf1313;
+            background-color: #2b2d31;;
+        }
+
+            .nav-bar li a{
+                text-decoration: none;
+                color: #fff;
+            }
+
+.main-footer{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #2b2d31;
+}
+
+.footer-content{
+    color: #808080;
+}
+
+.global-width{
+    width:  980px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main-content{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 5px;
+    border: 1px solid #808080;
+    box-shadow: 5px 10px 8px #808080;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #000;
+    color: #fff;
+}   
+
+    .main-content h1{
+        margin-top: 15px;
+        margin-left: 15px;
+        font-size: 30px;
+        color: #ffdd00;
+    }
+
+.para{
+    text-align: justify;
+    margin: 15px;
+}
+
+/*#########CONTACT CSS ###########*/
+form{
+    margin-left: 15px;
+}
+
+.small-input{
+    width: 80%;
+}
+
+.big-input{
+    width: 80%;
+    height: 200px;
+}
+
+/*##########Portfolio CSS############*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;    
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: gray;
+    background-color: black;
+}
+
+.grid-img{
+    height: 200px;
+    width: 300px;
+}
+/*#############MEDIA QUERIES##########*/
+@media screen and (max-width: 980px){
+    .global-width{
+        width: 980px;
+    } 
+}
+@media screen and (max-width: 780px){
+
+
+}
+@media screen and (max-width: 640px){
+    .global-width{
+        width: 100%;
+    }
+    .main-content{
+        padding: 0;
+        border: 0;
+        margin: 0;
+    }
+    /*#######header########*/
+    .my-name{
+        float: none;
+    }
+    .nav-bar ul{
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    /*#########paragraphs######*/
+    .round-img{
+        display: block;
+        float: none;
+        width: 50%;
+        margin: auto;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .grid-img{
+        width: 350;
+    }
+    
+    .grid-item{
+        padding: 0;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+}
